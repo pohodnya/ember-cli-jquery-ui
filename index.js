@@ -22,6 +22,7 @@ module.exports = {
       trees.push(tree);
     }
 
+    const app = this._findHost();
     const assetDir = path.join(app.bowerDirectory, 'jquery-ui');
 
     if (existSync(assetDir)) {
